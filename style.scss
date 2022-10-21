@@ -1,0 +1,44 @@
+$color-primary: red;
+$color-boxes: green;
+$color-decor: blue;
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 2px solid $color-primary;
+
+  h1 {
+    color: $color-boxes;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: $color-decor;
+  }
+
+  section {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    border: 2px solid $color-boxes;
+
+    article {
+      border-right: 2px solid $color-boxes;
+      &:last-of-type {
+        border-right: none;
+      }
+    }
+
+    p {
+      padding: 5px;
+      text-align: center;
+    }
+
+    .text-blue {
+      color: $color-decor;
+    }
+
+    .text-red {
+      color: $color-primary;
+    }
+  }
+}

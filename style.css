@@ -1,0 +1,36 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 2px solid red;
+}
+.main-container h1 {
+  color: green;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: blue;
+}
+.main-container section {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  border: 2px solid green;
+}
+.main-container section article {
+  border-right: 2px solid green;
+}
+.main-container section article:last-of-type {
+  border-right: none;
+}
+.main-container section p {
+  padding: 5px;
+  text-align: center;
+}
+.main-container section .text-blue {
+  color: blue;
+}
+.main-container section .text-red {
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */
